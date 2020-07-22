@@ -449,15 +449,15 @@ class quizapp:
 
 
     def clear(self):
-        for i in self.root.pack_slaves():
+        for i in self.root.pack_subordinates():
             i.destroy()
-        for i in self.root.place_slaves():
+        for i in self.root.place_subordinates():
             i.destroy()
 
     def q_clear(self):
-        for i in self.freame2.pack_slaves():
+        for i in self.freame2.pack_subordinates():
             i.destroy()
-        for i in self.frame3.pack_slaves():
+        for i in self.frame3.pack_subordinates():
             i.destroy()
 
 
